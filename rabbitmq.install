@@ -1,0 +1,12 @@
+set_cookie() {
+  COOKIE=`head -c 15 /dev/urandom | base64 | sed s/+/./`
+  sed -i "s:COOKIE=CHANGE_ON_INSTALL:COOKIE=$COOKIE:" /etc/rabbitmq/rabbitmq-env.conf
+}
+
+post_install() {
+  set_cookie
+}
+
+post_upgrade() {
+  set_cookie
+}

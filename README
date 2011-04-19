@@ -1,0 +1,7 @@
+Modified rabbitmq package def for Arch, based on:
+
+http://aur.archlinux.org/packages.php?ID=19090
+
+This version sets up an explicit cookie for use by rabbitmq, removing
+the dependency on what user is running the Erlang process (distributed
+Erlang nodes use the cookie in ~/.erlang.cookie).
