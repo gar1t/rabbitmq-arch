@@ -2,7 +2,7 @@
 # Contributor: p2k <Patrick dot Schneider at uni-ulm dot de>
 # Contributor: Garrett Smith <g at rre dot tt>
 pkgname=rabbitmq
-pkgver=2.4.0
+pkgver=2.5.1
 pkgrel=1
 pkgdesc="Highly reliable and performant enterprise messaging implementation of AMQP written in Erlang/OTP"
 arch=(i686 x86_64)
@@ -12,7 +12,7 @@ depends=('erlang')
 backup=('etc/rabbitmq/rabbitmq-env.conf')
 install=rabbitmq.install
 source=("http://www.rabbitmq.com/releases/rabbitmq-server/v${pkgver}/rabbitmq-server-generic-unix-${pkgver}.tar.gz" rabbitmq-env.conf rabbitmq-server)
-md5sums=('450ae2eceabdd46156529edb327561fa'
+md5sums=('d5c0749b0e6351e0874eee3c66c3d8b3'
          '1ed22ba6a754645768a08b0c9cfddecd'
          '049a3970f79f296a317f0eacb405c007')
 
